@@ -429,6 +429,7 @@ xMERGE($elem=null);
 
 
 <br />
+Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer Download Link </a> <br />
 *NOTE ! For Updates use new version for new project to avoid conflict.
 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
