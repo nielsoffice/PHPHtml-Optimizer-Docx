@@ -1,16 +1,5 @@
 <?php 
 
-function SetElementHeaderAttributes($attr_name,$attr_val) {
-
-    return $sets = [
-
-      $attr_name = $attr_name,
-      $attr_val  = $attr_val  
-
-    ];
-
-}
-
 // assets function / program files
 USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS PHPHtmlOptimizer;
