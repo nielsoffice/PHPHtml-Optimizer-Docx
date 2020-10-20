@@ -428,7 +428,7 @@ xMERGE($elem=null);
 | `_xH2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 | ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
 
-*Merge not support HTML : _xI(italic), _xB(bold), _xQ(Q), _xa(a link);
+*Merge not support HTML : _I(italic)/xI(italic), _B(bold)/xB(bold), _Q(Q)/xQ(Q), _a(a link)/xa(a link);
 <br />
 Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer Download Link </a> <br />
 *NOTE ! For Updates use new version for new project to avoid conflict.
