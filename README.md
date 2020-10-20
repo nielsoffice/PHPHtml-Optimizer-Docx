@@ -406,7 +406,7 @@ _xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $label=null);
 __HTML($label=null, $elem=null,  $attr=null, $id=null, $class=null, $assoc=null);
 <br />
 // Merge version Optional Associated or simply print or return if set as associated function
-H1( $value=null,  $attr=null, $id=null, $class=null, $label=null, $assoc=null );  
+_xH1( $value=null,  $attr=null, $id=null, $class=null, $label=null, $assoc=null );  
 <br />
 // Merge version None or never be Associated or simply print function
 _H1($attr=null, $id=null, $class=null) <br />
