@@ -423,12 +423,13 @@ xMERGE($elem=null);
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) | ASSOCIATED/Merge Version _(begin)/x(End) |
 |:---            |:---            |:---            |:---                           |:---                                  |:--- |
-| `H1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
-| `H2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
+| `_xH1()`         | Heading 1      | `_xHTML('H1')` |`__HTML('my_input','INPUT')`   |`_H1()`/`xH1()`                       |`_MERGE('H1')`/`xMERGE('H1')` |
+| `_xH2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 | ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
 
-
+*Merge not support HTML : _xI(), _xB(), _xQ() 
 <br />
+Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer Download Link </a> <br />
 *NOTE ! For Updates use new version for new project to avoid conflict.
 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
