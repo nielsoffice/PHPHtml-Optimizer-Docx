@@ -188,7 +188,7 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 
 <h4>Sample Code | Using Method _MERGE() PHPHtml-Optimizer/Procedural</h4>
 <pre>
-// Example 1
+## Example 1
 _xHTML('div',Html::_MERGE(
   
   // Heading
@@ -200,20 +200,16 @@ _xHTML('div',Html::_MERGE(
  // Begin  Div Attributes
 SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null ); // End of . Div ParentContainer
 
-// Example 2
+## Example 2
 USE \PHPHtml\CodeOptimizer\merge\Html;
 
 // BEGIN Parent
 _div(SetElemtAttr(['id'],['ParentContainer']));
- 
  // Begin Child
  div(Html::_MERGE(
-
    //  your code goes here...   
-  
  ),SetElemtAttr(['id'],['ChildContainer']));
  // END pf / Child Container
-
 xdiv(); 
 // END of / Parent Container
 
