@@ -186,6 +186,21 @@ __HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
 
 </pre>
 
+<h4>Sample Code | Using Method _MERGE() PHPHtml-Optimizer/Procedural</h4>
+<pre>
+
+_xHTML('div',Html::_MERGE(
+   
+   _xHTML('h1','Hello World') .
+   _xHTML('div', $object->UsersList)
+   
+), // End of Merge
+  // Begin  Div Attributes 
+  SetElementAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null 
+); // End of . Div ParentContainer 
+
+</pre>
+
 <h5>Understanding Class Method Parameters</h5>
 
 | PARAMETER'S    | Description |
