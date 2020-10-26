@@ -206,7 +206,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html; <br />
 // BEGIN Parent
 _div(SetElemtAttr(['id'],['ParentContainer'])); <br />
  // Begin Child
- div(Html::_MERGE(
+ div(Html::_MERGE( <br />
    //  your code goes here...   
  ),SetElemtAttr(['id'],['ChildContainer']));
  // END pf / Child Container <br />
