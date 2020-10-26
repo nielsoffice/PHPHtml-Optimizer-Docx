@@ -199,7 +199,8 @@ _xHTML('div',Html::_MERGE(
 
  ), // End of Merge
  // Begin  Div Attributes
-SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null ); // End of . Div ParentContainer
+SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null ); 
+// End of . Div ParentContainer
 
 ## Example 2
 USE \PHPHtml\CodeOptimizer\merge\Html; <br />
