@@ -204,11 +204,11 @@ SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null );
 
 ## Example 2
 USE \PHPHtml\CodeOptimizer\merge\Html; <br />
-// BEGIN Parent
-_div(SetElemtAttr(['id'],['ParentContainer'])); <br />
- // Begin Child
- _xdiv(Html::_MERGE( <br />
-   //  your code goes here...   
+  // BEGIN Parent
+  _div(SetElemtAttr(['id'],['ParentContainer'])); <br />
+  // Begin Child
+   _xdiv(Html::_MERGE( <br />
+  //  your code goes here...   
  ),SetElemtAttr(['id'],['ChildContainer']));
  // END pf / Child Container <br />
 xdiv(); 
