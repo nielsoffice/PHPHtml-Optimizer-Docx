@@ -221,19 +221,19 @@ xdiv();
 // BONUS: 
 _div('','parentTagElement'); <br />
   Html::_PERFORM( $getCons = [<br />
-         'do_print' => function ($trim, $trims) { <br />
-          $TrimThis  =  trim($trim);<br />
-          $TrimThis_ =  trim($trims);<br />
-          $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ;<br />
-          return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
+         'do_print' => function ($trim, $trims) {
+          $TrimThis  =  trim($trim);
+          $TrimThis_ =  trim($trims);
+          $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ;
+          return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; 
           }  // end of index<br />
   ], FUNC_ASSOC) ;<br />
    echo _xHTML('div',Html::_MERGE(<br />
-  _xHTML('h1','MyHeading','','H1_iD') .<br />
-    _xHTML('p', $getCons['do_print']('Hello','World') )<br />
-    ) // End of merge<br />
-  ); // End of div<br />
-xdiv(); <br />
+  _xHTML('h1','MyHeading','','H1_iD') .
+    _xHTML('p', $getCons['do_print']('Hello','World') )
+    ) // End of merge
+  ); // End of div
+xdiv(); 
 </pre>
 
 <h5>Understanding Class Method Parameters</h5>
