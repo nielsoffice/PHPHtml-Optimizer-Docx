@@ -229,8 +229,8 @@ _div('','parentTagElement'); <br />
           }  // end of index<br />
   ], FUNC_ASSOC) ;<br />
    echo _xHTML('div',Html::_MERGE(<br />
-  _xHTML('h1','MyHeading','','H1_iD') .
-    _xHTML('p', $getCons['do_print']('Hello','World') )
+     _xHTML('h1','MyHeading','','H1_iD') .
+     _xHTML('p', $getCons['do_print']('Hello','World') ) <br />
     ) // End of merge
   ); // End of div<br />
 xdiv(); 
