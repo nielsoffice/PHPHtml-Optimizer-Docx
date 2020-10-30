@@ -222,10 +222,10 @@ xdiv();
 _div('','parentTagElement'); <br />
   Html::_PERFORM( $getCons = [<br />
          'do_print' => function ($trim, $trims) {
-          $TrimThis  =  trim($trim);
-          $TrimThis_ =  trim($trims);
-          $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ;
-          return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; 
+            $TrimThis  =  trim($trim);
+            $TrimThis_ =  trim($trims);
+            $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; <br />
+            return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
           }  // end of index<br />
   ], FUNC_ASSOC) ;<br />
    echo _xHTML('div',Html::_MERGE(<br />
