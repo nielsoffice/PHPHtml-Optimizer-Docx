@@ -236,7 +236,6 @@ _div('','parentTagElement'); <br />
 xdiv(); 
 <br />
 // ANONYMOUSE CALL_BACK<br />
-
 function make_merge($cb, $do) {<br />
    return $cb; 
 }<br />
