@@ -238,12 +238,12 @@ xdiv();
 // ANONYMOUSE CALL_BACK<br />
 
 function make_merge($cb, $do) {<br />
-   return $cb . "<br />"; 
+   return $cb; 
 }<br />
 Html::_PERFORM(<br />
   make_merge('Check_cb', $cb_merge = function () {
    return   'Hello Merge return ';
-  }) . $cb_merge() . "<br >"<br />
+  }) . $cb_merge();<br />
 );
 <br />
 $message = 'Hello World';<br />
