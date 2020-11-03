@@ -256,12 +256,9 @@ _xdiv(Html::_MERGE( <br />
    _xHTML('div', make_merge('', $cb_merge = function () use ($TrimThis)  { <br /> 
          $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; 
          return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
-
-     })  <br />
+     }) 
    )  
-
  ) . _xHTML('h1',$cb_merge()) <br />
-
 );
 </pre>
 
