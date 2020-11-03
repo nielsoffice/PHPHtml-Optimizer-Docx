@@ -246,7 +246,7 @@ Html::_PERFORM(<br />
 );
 <br />
 $message = 'Hello World';<br />
-make_merge('Check_cb', $do_merge = function () use ($message)  { return   $message; }); <br />
+make_merge('Check_cb', $do_merge = function () use ($message)  { return  $message; }); <br />
 Html::_PERFORM($do_merge());
 
 </pre>
