@@ -260,6 +260,7 @@ _xdiv(Html::_MERGE( <br />
    )  
  ) . _xHTML('h1',$cb_merge()) <br />
 );
+
 </pre>
 
 <h5>Understanding Class Method Parameters</h5>
