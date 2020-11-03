@@ -245,12 +245,24 @@ Html::_PERFORM(<br />
   }) . $cb_merge();<br />
 );
 <br />
-$message = 'Hello World';<br />
+$TrimThis = $message = 'Hello World';<br />
 Html::_PERFORM(<br />
   make_merge('Check_cb', $do_merge = function () use ($message) { return  $message; }) 
   . $do_merge() <br />
 );
 
+// RETURN CALL_BACK
+_xdiv(Html::_MERGE( <br />
+   _xHTML('div', make_merge('', $cb_merge = function () use ($TrimThis)  { <br /> 
+         $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; 
+         return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
+
+     })  <br />
+   )  
+
+ ) . _xHTML('h1',$cb_merge()) <br />
+
+);
 </pre>
 
 <h5>Understanding Class Method Parameters</h5>
