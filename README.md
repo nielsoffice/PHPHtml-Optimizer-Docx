@@ -235,7 +235,7 @@ _div('','parentTagElement'); <br />
   ); // End of div<br />
 xdiv(); 
 <br />
-// ANONYMOUSE CALL_BACK<br />
+// ANONYMOUS CALL_BACK
 function make_merge($cb, $do) {<br />
    return $cb; 
 }<br />
@@ -246,10 +246,7 @@ Html::_PERFORM(<br />
 );
 <br />
 $message = 'Hello World';<br />
-make_merge('Check_cb', $do_merge = function () use ($message)  {<br />
-   return   $message;<br />
-});
-<br />
+make_merge('Check_cb', $do_merge = function () use ($message)  { return   $message; }); <br />
 Html::_PERFORM($do_merge());
 
 </pre>
