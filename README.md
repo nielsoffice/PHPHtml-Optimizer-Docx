@@ -234,6 +234,25 @@ _div('','parentTagElement'); <br />
     ) // End of merge
   ); // End of div<br />
 xdiv(); 
+<br />
+// ANONYMOUSE CALL_BACK<br />
+
+function make_merge($cb, $do) {<br />
+   return $cb . "<br />"; 
+}<br />
+Html::_PERFORM(<br />
+  make_merge('Check_cb', $cb_merge = function () {
+   return   'Hello Merge return ';
+  }) . $cb_merge() . "<br >"<br />
+);
+<br />
+$message = 'Hello World';<br />
+make_merge('Check_cb', $do_merge = function () use ($message)  {<br />
+   return   $message;<br />
+});
+<br />
+Html::_PERFORM($do_merge());
+
 </pre>
 
 <h5>Understanding Class Method Parameters</h5>
