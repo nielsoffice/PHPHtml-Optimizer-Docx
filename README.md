@@ -1,75 +1,14 @@
-<img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/119389723_1181335685573316_2339548645504738190_n.jpg?_nc_cat=103&_nc_sid=730e14&_nc_eui2=AeFjNkrFhVNjcxR9W-QtwMKG_uGjgyCAqLH-4aODIICosd7orVRodvpIVMgnCL6x0pJ5epFA3U6mpHBm2VkJl7vc&_nc_ohc=VqXGzZi2mvkAX8_tiLn&_nc_ht=scontent.fmnl3-1.fna&oh=0e70840c2f5ec7a5d20b5b94739a5b8a&oe=5F8768AA">
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
-<p>It is simplified the code from HTML removing backticks, double quotes and saving time to convert or wrap HTML into PHP through appended variables although appending in the variable will be still possible using for some reason within your codes, PHPHtml-Optimizer is easier to optimize your codes lessen big page-load to your application/program.<br />
-When the browser detect that there will no HTML printed the interpreter will execute your codes once at the same time, not section by section at that point your data will be rendered accurately.<br /><br />
-To refractor/optimize code is a hassle and heavy load burden in programming, Allow PHPHtml-Optimizer will do that for you while you develop your Internet application, with this library will push you driving your codes learning the OOP concept to make more effective your codes into your application neat and clean not just clean but beautiful maintainable codes, you can use this library and feel FREE if are comfortable.    
-</p>
-<h4>Installing PHPHtml-Optimizer</h4>
-<pre>
 
-// Require file in header file or in every page where you will use. 
-// This is for Static method settup which most use on pages
-require_once (\_\_DIR\_\_ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
+<h4>Demo | PHP with HTML Default (Wrapping Html)/Procedural</h4>
 
+```PHP
 
-// Static Default
-USE \PHPHtml\CodeOptimizer\merge\Html;
-
-// Static Alias
-USE \PHPHtml\CodeOptimizer\merge\Html AS MyHTML;
-MyHTML::h1('Static');
-
-// Instantiate Default
-$html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
-
-// Instantiate Alias
-USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyElement;
-$html = NEW MyElement();
-$html->h1('optimizer');
-
-</pre>
-
-<h4>Installing PHPHtml-Optimizer w/Composer</h4>
-<pre>
-
-// Run Command line directory with your project folder
-~ C:/path/www/project/Library/
-<br />
-// Run command
-~ composer require phphtml-optimizer/phphtml-optimizer
-<br />
-// This is for Static method settup which most use on pages
-require_once ( \_\_DIR\_\_ . '/library/PHPHtml-Optimizer/PHPHtml-Optimizer.php');
-
-...
-...
-
-</pre>
-
-<h4>Folder Structure:</h4>
-
-<pre>
-
-|- root folder
-  |- library
-    |- PHPHtml-Optimizer
-       |- optimizer
-       |- merge
-       |- PHPHtml-optimizer.php
-       |- prop.php
-  |- assets
-  |- includes
-  |- etc..
-
-</pre>
-
-<h4>Sample Code | PHP with HTML Default (Wrapping Html)/Procedural</h4>
-<pre>
 <?php 
 
 $html   = ""; 
-$html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
+$html  .= "<ul id=\"My_id_ParentTags\" class=\"MyClass\">";
     
     $datas = [];
     for ($i = 1; $i <= 10; $i++) 
@@ -78,14 +17,19 @@ $html  .= "<ul id=\\"My_id_ParentTags\\" class=\\"MyClass\\">";
     }
     return implode('', $datas); 
     
-$html  .= "< \/ ul >";
+$html  .= "</ul >";
+
 // Loop and excuted
-print $html;
+ print $html;
+
 ?>
-</pre>
+
+```
 
 <h4>Sample Code | PHPHtml-Optimizer/Procedural</h4>
-<pre>
+
+```PHP
+
 <?php 
 
  function my_data() {     
@@ -96,10 +40,13 @@ print $html;
     }
      return implode('', $datas);  
   }
-  // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return (need echo or print)  
-  echo Html::ELEMENT('UL',my_data(),NULL,'MyID','MyCLass'); 
+  
+  // ASSOCIATED WITH FUNCTION | METHOD | CLASS it is seta s return need to perform using  PHPHtml-Optimizer  
+  PERFORM ( Html::ELEMENT('UL', my_data(), NULL, 'MyID', 'MyCLass') );
+  
 ?>
-</pre>
+
+```
 
 <h4>Sample Code | PHP with HTML Default (IF Statement)/Procedural</h4>
 
@@ -504,11 +451,16 @@ xMERGE($elem=null);
 | `_xH2()`         | Heading 2      | `_xHTML('H2')` |`__HTML('my_track','track')`   |`_H2()`/`xH2()`                       |`_MERGE('H2')`/`xMERGE('H2')` |
 | ...            | ...            | ...            |...                            |...                                   | <a href="#element">loading...</a>                   |
 
+
 *Merge not support HTML : _I(italic)/xI(italic), _B(bold)/xB(bold), _Q(Q)/xQ(Q), _a(a link)/xa(a link);
 <br />
 Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer Download Link </a> <br />
-*NOTE ! For Updates use new version for new project to avoid conflict.
+*NOTE ! For Updates use new version for new project Migrate version not supported.
 
+For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
+To Request Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> PHPHtml-Optimizer link here </a><br /> 
+For File Enhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Documentation/Reference link here </a><br /> 
+For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
 <h2>Thanks To:</h2>
@@ -518,11 +470,8 @@ php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<b
 w3school : HTML Elements reference</h5>
 
 __For Suggestion and Donation/Sponsorship You can send via My GCash : +639650332900__ <br />
-__Also You can send via My Paypal account: syncdevprojects@gmail.com__
-
-
+__Also You can send via My Paypal account: syncdevprojects@gmail.com__ <br />
 Thanks and good luck! 
-
 
 
 
