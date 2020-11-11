@@ -61,7 +61,7 @@ if (TRUE) {
 
 // Sample Code | PHPHtml-Optimizer/Procedural
 // PHPHtml-Optimizer/Merge:
-H1(DOIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
+_xH1(DOIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
 
 ```
 
@@ -82,7 +82,7 @@ if (FLASE) {
 
 // Sample Code | PHPHtml-Optimizer/Procedural
 // PHPHtml-Optimizer/Merge:
-H1(DOELSE( FALSE ,'Yes', 'PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
+_xH1(DOELSE( FALSE ,'Yes', 'PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
 ```
 
@@ -258,10 +258,12 @@ _xdiv(Html::_MERGE(
 
 ```PHP
 
-// EXTENDING CLASS
+// EXTENDING PHPHtml-Optimizer CLASSES
+USE \PHPHtml\CodeOptimizer\merge\Html;
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyProjectName;
+USE \PHPHtml\CodeOptimizer\optimizer\Enhancers AS OptimizerCare; 
 
-Class ProgramName extend MyProjectName {
+Class ProgramName extends MyProjectName {
   
   public function __construct() {
    
@@ -315,7 +317,7 @@ Html::xH1($label=null)
 
 ```
 
-<h5 id="element">On Page | Static Methods</h5>
+<h5 id="element">Static Methods List HTML element supported</h5>
 
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) |
@@ -427,7 +429,7 @@ Html::xH1($label=null)
 <h6>PHPHtml-Optimizer Merge Version</h6>
 <p>PHPHtml-Merge version is more shorthand and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
 
-<h5>Static ELEMENTS and parameters </h5>
+<h5>ELEMENTS and parameters </h5>
 
 ```PHP
 
@@ -456,7 +458,7 @@ xMERGE($elem=null);
 
 ```
 
-<h5>Functions List</h5>
+<h5>Functions List HTML supported</h5>
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) | ASSOCIATED/Merge Version _(begin)/x(End) |
 |:---            |:---            |:---            |:---                           |:---                                  |:--- |
