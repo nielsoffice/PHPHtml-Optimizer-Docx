@@ -134,82 +134,115 @@ __HTML('Avatar','img',SetImgExtension('src','/../'.$name.'', __PNG__ ));
 
 ```
 
-<h4>Sample Code | Using Method _MERGE() PHPHtml-Optimizer/Procedural</h4>
-<pre>
+<h4>Demo Codes | Using Method MERGE() PHPHtml-Optimizer/Procedural</h4>
 
-## Example 1
-_xHTML('div',Html::_MERGE(
+```PHP
+
+// Method USING MERGE() 1
+_xHTML('div',Html::MERGE(
   
   // Heading
   _xHTML('h1','Hello World') .
   // Content
   _xHTML('div', $object->UsersList() )
 
- ), // End of Merge
- // Begin  Div Attributes
-SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null ); 
-// End of . Div ParentContainer
+ ) // End of Merge
+ 
+ // Begin  Div Attributes & End of . Div ParentContainer
+,SetElemtAttr(['attr_name'],['attr_val']), $id='ParentContainer', $class=null ); 
 
-## Example 2
-USE \PHPHtml\CodeOptimizer\merge\Html; <br />
-  // BEGIN Parent
-  _div(SetElemtAttr(['id'],['ParentContainer'])); <br />
+// Method USING MERGE() 2
+USE \PHPHtml\CodeOptimizer\merge\Html; 
+
+// BEGIN Parent
+  _div(SetElemtAttr(['id'],['ParentContainer'])); 
+  
   // Begin Child
-   _xdiv(Html::_MERGE( <br />
-  //  your code goes here...   
- ),SetElemtAttr(['id'],['ChildContainer']));
- // END pf / Child Container <br />
-xdiv(); 
+   _xdiv(Html::_MERGE( 
+   
+     //  your code goes here...   
+   
+    )
+ 
+   ,SetElemtAttr(['id'],['ChildContainer']));
+  // END pf / Child Container 
+ 
+ xdiv('END / of ParentContainer '); 
 // END of / Parent Container
 
+```
 
-</pre>
+```PHP
 
-<pre>
 // BONUS: 
-_div('','parentTagElement'); <br />
-  Html::_PERFORM( $getCons = [<br />
+
+_div('','parentTagElement'); 
+
+  Html::_PERFORM( $getCons = [
          'do_print' => function ($trim, $trims) {
+         
             $TrimThis  =  trim($trim);
             $TrimThis_ =  trim($trims);
-            $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; <br />
-            return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
-          }  // end of index<br />
-  ], FUNC_ASSOC) ;<br />
-   echo _xHTML('div',Html::_MERGE(<br />
+            $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; 
+            
+            return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; 
+            
+          }  // end of index
+          
+  ], FUNC_ASSOC);
+  
+ _xdiv(
+    
+    Html::_MERGE(
+  
      _xHTML('h1',$user->allUsers,'','H1_iD') .
-     _xHTML('p', $getCons['do_print']('Hello','World') ) <br />
+     _xHTML('p', $getCons['do_print']('Hello','World') ) 
+     
     ) // End of merge
-  ); // End of div<br />
-xdiv(); 
-<br />
+    
+  ); // End of div
+  
+xdiv('END of / parentTagElement'); 
+
+```PHP
+
 // ANONYMOUS CALL_BACK
-function make_merge($cb, $do) {<br />
-   return $cb; 
-}<br />
-Html::_PERFORM(<br />
+function make_merge($cb, $do) {
+  return $cb; 
+}
+
+Html::_PERFORM(
+
   make_merge('Check_cb', $cb_merge = function () {
+  
    return   'Hello Merge return ';
-  }) . $cb_merge();<br />
+  
+  }) . $cb_merge();
+
 );
-<br />
-$TrimThis = $message = 'Hello World';<br />
-Html::_PERFORM(<br />
+
+$TrimThis = $message = 'Hello World';
+
+Html::_PERFORM(
+
   make_merge('Check_cb', $do_merge = function () use ($message) { return  $message; }) 
-  . $do_merge() <br />
+  . $do_merge() 
 );
 
 // RETURN CALL_BACK
-_xdiv(Html::_MERGE( <br />
-   _xHTML('div', make_merge('CHECK_IF_TRUE_THEN', $cb_merge = function () use ($TrimThis)  { <br /> 
+_xdiv(Html::_MERGE( 
+
+   _xHTML('div', make_merge('CHECK_IF_TRUE_THEN', $cb_merge = function () use ($TrimThis)  { 
+   
          $merge   = $TrimThis . $check = $varVal = isset($TrimThis_) ? $TrimThis_ : '' ; 
-         return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; <br />
-     }) 
-   )  
+         return $getReturn = $varSet = TRUE ?  $merge : 'Nope'; 
+   
+   }) 
+  )  
  ) . _xHTML('h1',$cb_merge()) <br />
 );
 
-</pre>
+```
 
 <h5>Understanding Class Method Parameters</h5>
 
@@ -219,30 +252,10 @@ _xdiv(Html::_MERGE( <br />
 | `CLASS_ASSOC`  | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 | `FUNC_ASSOC`   | Is a Paramenter that will use and position to the very end of function or methods Optional Associated |
 
-<h5>Append Method Alpha version </h5>
 
-| Other Method     | Description |
-| ---            | ---         |
- `_PERFORM`     | This Append Method is alpha version not stable and not recommend to use / alternative echo/print |
-| `Html::BREAK()`   | Break tag ( *Not support custom html attr ! ) Optional Associated |
-| `Html::INLINE()`| Horizontal tag ( *Not support custom html attr ! ) Optional Associated |
-| `Html::STRING()` | print without/anyElements or tag ( *Not support custom html attr ! ) Optional Associated |
+```PHP
 
-
-<h5>Usage: Extending Static and Instantiate Class Methods</h5>
-
-<pre>
-
-// Static Default
-USE \PHPHtml\CodeOptimizer\merge\Html;
-
-// Static Alias
-USE \PHPHtml\CodeOptimizer\merge\Html AS MyHTML;
-
-// Instantiate Default
-$html = NEW \PHPHtml\CodeOptimizer\optimizer\Html();
-
-// Instantiate Alias
+// EXTENDING CLASS
 USE \PHPHtml\CodeOptimizer\optimizer\Html AS MyProjectName;
 
 Class ProgramName extend MyProjectName {
@@ -255,15 +268,14 @@ Class ProgramName extend MyProjectName {
 
 }
 
-</pre>
-
+```
 
 <h5>Usage: Static | More Samples with Parameters</h5>
 
-<pre>
+```PHP
 
-// Html Custom attributes:
-function my_htmattr() {
+// Html Custom attributes: 
+ function my_htmattr() {
 
     return $sets = [
 
@@ -274,40 +286,32 @@ function my_htmattr() {
 
  }
  
-Print html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel',FUNC_ASSOC);
-      html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel',METHOD_ASSOC); 
-    
-// NULL use outside of function 
-html::H1("Hello World",my_htmattr(),'MyID','MyClass','MyLabel', NULL); 
+PERFORM ( html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel', FUNC_ASSOC) );
+        html::_xH1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel',METHOD_ASSOC) ; 
 
-Print html::H1(html::STRING("Heading Hello World", FUNC_ASSOC), my_htmattr(),'MyID','MyClass','',FUNC_ASSOC);
-      html::H1("Hello World",my_htmattr(),'MyID','MyClass','',FUNC_ASSOC); 
-
-// NULL use outside of function 
-html::H1("Hello World",my_htmattr(),'MyID','MyClass','', NULL); 
-
-</pre>
+```
 
 <h5>Static ELEMENTS and parameters </h5>
 
-<pre>
+```PHP
 // Associated or simply means return function
 Html::ELEMENT($element=null, $value=null, $attr=null, $id=null, $class=null, $label=null)
-<br />
+
 // Optional Associated or simply print or return if set as associated function
 Html::_ELEMENT($label=null, $elem=null, $attr=null, $id=null, $class=null, $assoc=null)
-<br />
+
 // Optional Associated or simply print or return if set as associated function
 Html::H1($value=null, $attr=null, $id=null, $class=null, $label=null, $assoc=null)
-<br />
+
 // None or never be Associated or simply print function
-Html::_H1($attr=null, $id=null, $class=null)<br />
-... content goes here ...<br />
+Html::_H1($attr=null, $id=null, $class=null)
+
+... content goes here ...
+
 Html::xH1($label=null)
 
-</pre>
+```
 
-<h1></h1>
 <h5 id="element">On Page | Static Methods</h5>
 
 
