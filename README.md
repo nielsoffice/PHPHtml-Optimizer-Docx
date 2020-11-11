@@ -1,7 +1,7 @@
 <h6>Support PHP v7.0++ higher | not work for v.7 less</h6>
 <h6>PHPHtml-Optimizer is a PHP FREE library that will help PHP/Developer/Programmer beautiful and optimize codes. </h6>
 
-<h4>Demo | PHP with HTML Default (Wrapping Html)/Procedural</h4>
+<h4>Demo codes | PHP with HTML Default (Wrapping Html)/Procedural</h4>
 
 ```PHP
 
@@ -26,7 +26,7 @@ $html  .= "</ul >";
 
 ```
 
-<h4>Sample Code | PHPHtml-Optimizer/Procedural</h4>
+<h4>Demo Codes | PHPHtml-Optimizer/Procedural</h4>
 
 ```PHP
 
@@ -48,50 +48,51 @@ $html  .= "</ul >";
 
 ```
 
-<h4>Sample Code | PHP with HTML Default (IF Statement)/Procedural</h4>
+<h4>Demo Codes | PHP with HTML Default (IF Statement)/Procedural</h4>
 
-<pre>
+```PHP
 
 // Default HTML Procedural:
 if (TRUE) {
 
-  print "< h1 >Default HTML Procedural: YES < / h1> ";
+  print "<h1>Default HTML Procedural: YES </h1> ";
 
 } 
 
 // Sample Code | PHPHtml-Optimizer/Procedural
 // PHPHtml-Optimizer/Merge:
-H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
+H1(DOIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC));
 
-</pre>
+```
 
-<h4>Sample Code | PHP with HTML Default (IF ELSE Statement)/Procedural</h4>
+<h4>Demo Codes | PHP with HTML Default (IF ELSE Statement)/Procedural</h4>
 
-<pre>
+```PHP
 
 // Default HTML Procedural:
 if (FLASE) {
 
-  print "< h1 > Default HTML Procedural:  YES < / h1>";
+  print "<h1> Default HTML Procedural: YES </h1>";
 
 } else {
    
-  print "< h1 >Default HTML Procedural: NO < / h1>";
+  print "<h1> Default HTML Procedural: NO </h1>";
 
 }
 
-//Sample Code | PHPHtml-Optimizer/Procedural
+// Sample Code | PHPHtml-Optimizer/Procedural
 // PHPHtml-Optimizer/Merge:
-H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
+H1(DOELSE( FALSE ,'Yes', 'PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC));
 
-</pre>
+```
 
-<pre>
-// Sample Code | PHPHtml-Optimizer/Merge Using File Extension
+```PHP
+
+// Demo Codes | PHPHtml-Optimizer/Merge Using File Extension
 // PHPHtml-Optimizer/Merge:
 // SetExtension($argu);  
 
-function getMe($src,$path,$argu) {
+function SetExtension($src,$path,$argu) {
 
    $merge = $path.$extension = Html::SetFileExtension($argu);
        
@@ -104,17 +105,17 @@ function getMe($src,$path,$argu) {
 
 }
 
-Html::_ELEMENT('Profile','link',getMe('src','/../profile', __PHP__));
+Html::_ELEMENT('Profile', 'link', SetExtension('src','/../profile', __PHP__) );
 
-</pre>
+```
 
-<pre>
+```PHP
 
-// Sample Code | PHPHtml-Optimizer/Merge Using Image Extension
+// Demo Codes | PHPHtml-Optimizer/Merge Using Image Extension
 // PHPHtml-Optimizer/Merge:
 // SetImageExtension()
 
-function getMeIMG($src,$path, $argu=null) {
+function SetImgExtension($src,$path, $argu=null) {
 
       $merge = $path.$extension = Html::SetFileExtension($argu);
         
@@ -129,9 +130,9 @@ function getMeIMG($src,$path, $argu=null) {
 
 $name = 'fileName';
 
-__HTML('Avatar','img',getMeIMG('src','/../'.$name.'', __PNG__ ));
+__HTML('Avatar','img',SetImgExtension('src','/../'.$name.'', __PNG__ ));
 
-</pre>
+```
 
 <h4>Sample Code | Using Method _MERGE() PHPHtml-Optimizer/Procedural</h4>
 <pre>
