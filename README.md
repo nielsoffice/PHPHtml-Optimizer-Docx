@@ -178,7 +178,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html;
 
 _div('','parentTagElement'); 
 
-  Html::_PERFORM( $getCons = [
+  Html::PERFORM( $getCons = [
          'do_print' => function ($trim, $trims) {
          
             $TrimThis  =  trim($trim);
@@ -193,7 +193,7 @@ _div('','parentTagElement');
   
  _xdiv(
     
-    Html::_MERGE(
+    Html::MERGE(
   
      _xHTML('h1',$user->allUsers,'','H1_iD') .
      _xHTML('p', $getCons['do_print']('Hello','World') ) 
@@ -226,14 +226,14 @@ Html::_PERFORM(
 
 $TrimThis = $message = 'Hello World';
 
-Html::_PERFORM(
+Html::PERFORM(
 
   make_merge('Check_cb', $do_merge = function () use ($message) { return  $message; }) 
   . $do_merge() 
 );
 
 // RETURN CALL_BACK
-_xdiv(Html::_MERGE( 
+_xdiv(Html::MERGE( 
 
    _xHTML('div', make_merge('CHECK_IF_TRUE_THEN', $cb_merge = function () use ($TrimThis)  { 
    
@@ -421,7 +421,7 @@ Html::xH1($label=null)
 | ---            | ---         |
 | `SetElemAttr()`    | __Usage:__  Html::_ELEMENT('A', SetElementAttributes(['href'],['mysite.com'])); |
 | `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
-| `_MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ Any PHPHtml-Optimizer Pre-defined Associated Function(); |
+| `MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ Any PHPHtml-Optimizer Pre-defined Associated Function(); |
 | `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 | `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
