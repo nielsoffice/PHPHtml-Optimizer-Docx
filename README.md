@@ -273,7 +273,7 @@ Class ProgramName extend MyProjectName {
 
 ```
 
-<h5>Usage: Static | More Samples with Parameters</h5>
+<h5>Usage: Static Method | More Samples with Parameters</h5>
 
 ```PHP
 
@@ -290,7 +290,7 @@ Class ProgramName extend MyProjectName {
  }
  
 PERFORM ( html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel', FUNC_ASSOC) );
-        html::_xH1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel',METHOD_ASSOC) ; 
+        html::_xH1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel') ; 
 
 ```
 
@@ -424,32 +424,37 @@ Html::xH1($label=null)
 | `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
 
 
-<br />
-<img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/119715665_1186082691765282_2093887907714346762_n.jpg?_nc_cat=105&_nc_sid=730e14&_nc_eui2=AeH72dqqY9T8i68c464gOPHOSxYWFwR0Nd1LFhYXBHQ13XDbhayV89QnK05ZPhGmD8-PwpZTdWfJBhkvNqsUR1Ts&_nc_ohc=KA6nhf8YuSkAX9tSNsY&_nc_oc=AQm-jmRqatQPGwHBTt_L9xcU5plIAqlVwdSwWzNRCLOGbOviYenh9hW549kswYSr5uw&_nc_ht=scontent.fmnl3-2.fna&oh=9de92625da228cf3cd22309be0c63328&oe=5F8D58EF">
 <h6>PHPHtml-Optimizer Merge Version</h6>
 <p>PHPHtml-Merge version is more shorthand and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
 
 <h5>Static ELEMENTS and parameters </h5>
-<pre>
+
+```PHP
+
 // Merge version Associated or simply means return function
 _xHTML($elem=null, $value=null, $attr=null, $id=null, $class=null, $label=null);
-<br />
+
 // Merge version Optional Associated or simply print or return if set as associated function
 __HTML($label=null, $elem=null,  $attr=null, $id=null, $class=null, $assoc=null);
-<br />
+
 // Merge version Optional Associated or simply print or return if set as associated function
-_xH1( $value=null,  $attr=null, $id=null, $class=null, $label=null, $assoc=null );  
-<br />
+_xH1( $value=null,  $attr=null, $id=null, $class=null, $label=null, $assoc=null ); 
+
 // Merge version None or never be Associated or simply print function
-_H1($attr=null, $id=null, $class=null) <br />
-... content goes here ...<br />
+_H1($attr=null, $id=null, $class=null) 
+
+... content goes here ...
+
 xH1($label = NULL)
-<br />
+
 //Merge version Associated or simply return function
-_MERGE($elem=null,  $attr=null, $id=null, $class=null);<br />
-... content goes here ...<br />
+_MERGE($elem=null,  $attr=null, $id=null, $class=null);
+
+... content goes here ...
+
 xMERGE($elem=null);
-</pre>
+
+```
 
 <h5>Functions List</h5>
 
