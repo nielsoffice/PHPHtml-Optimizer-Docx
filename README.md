@@ -469,7 +469,7 @@ xMERGE($elem=null);
 
 *Merge not support HTML : _I(italic)/xI(italic), _B(bold)/xB(bold), _Q(Q)/xQ(Q), _a(a link)/xa(a link);
 <br />
-__*NOTE ! For Updates use new version for new project Migrate version not supported.
+__*NOTE ! For Updates use new version for new project Migrate version not supported.__
 
 For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 To Request Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer link here </a><br /> 
