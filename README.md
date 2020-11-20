@@ -158,7 +158,7 @@ USE \PHPHtml\CodeOptimizer\merge\Html;
   _div(SetElemtAttr(['id'],['ParentContainer'])); 
   
   // Begin Child
-   _xdiv(Html::_MERGE( 
+   _xdiv(Html::MERGE( 
    
      //  your code goes here...   
    
@@ -267,7 +267,7 @@ Class ProgramName extends MyProjectName {
   
   public function __construct() {
    
-   parent::H1('Hello World'); 
+   $this->H1('Hello World'); 
 
    }
 
@@ -292,7 +292,7 @@ Class ProgramName extends MyProjectName {
  }
  
 PERFORM ( html::H1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel', FUNC_ASSOC) );
-        html::_xH1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel') ; 
+          Html::_xH1("Hello World",my_htmattr() ,'MyID','MyClass','MyLabel') ; 
 
 ```
 
