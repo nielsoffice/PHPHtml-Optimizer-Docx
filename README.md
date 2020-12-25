@@ -471,9 +471,13 @@ xMERGE($elem=null);
 <br />
 __*NOTE ! For Updates use new version for new project Migrate version not supported.__
 
-For installation <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
-To Request Download File <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer"> PHPHtml-Optimizer link here </a><br /> 
-For File Enhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Documentation/Reference link here </a><br /> 
+For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
+For PHPOptimizer more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
+For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
+For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
+For PHPForm and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
+For PHPLayout and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.5 </a><br /> 
+For PHPFrontScript and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v2 </a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
@@ -483,9 +487,8 @@ Github : To allow me to upload my PHPHtml-Optimizer PHP Library to repository<br
 php.net : To oppurtunity Develop web application using corePHP - PHPFrameworks<br />
 w3school : HTML Elements reference</h5>
 
-__For Suggestion and Donation/Sponsorship You can send via GCash : +639650332900__ <br />
-__Also You can send via Paypal account: syncdevprojects@gmail.com__ <br />
-Thanks and good luck! 
+__For Suggestion and Donation/Sponsorship You can send via GCash : +639650332900__ <br /> __Also You can send via Paypal account: syncdevprojects@gmail.com__ <br /> Thanks and good luck! 
+
 
 
 
