@@ -417,14 +417,6 @@ Html::xH1($label=null)
 | `Html::BODY()`| Element        |      |  |
 | `Html::noHTML()`| Element      |      |  |
 
-| Extra Methods    |  Description  |
-| ---            | ---         |
-| `SetElemAttr()`    | __Usage:__  Html::_ELEMENT('A', SetElementAttributes(['href'],['mysite.com'])); |
-| `SetFileExtension()`       | __Usage:__ $extension = Html::SetExtension(PARAM) - use this to assign extension or format to the file such as.. <br /> __Parameters:__ `__PHP__`,  `__HTML__`, `__CSS__`,  `__JS__`,   `__JPG__`, `__JPEG__`, `__PNG__`,  `__GIF__`,  `__BMP__`, `__TEX__`, `__XLS__`,  `__XLSX__`, `__DOCX__`, `__DOCX__`, `__PPT__`, `__PPTX__`, `__ODT__`,  `__TXT__`,  `__RTF__` |
-| `MERGE()`       | __Usage:__ Html::_MERGE(Html::Function1().Html::Function2()); - use this to print two methods or function one at the time ex. heading and content <br /> __Parameter:__ Any PHPHtml-Optimizer Pre-defined Associated Function(); |
-| `__magicELSE()`  | __Usage:__ H1(Html::__magicELSE( FALSE ,'Yes','PHPHtml-Optimizer/Merge: NO', FUNC_ASSOC)) - use to append within methods <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-| `__magicIF()`    | __Usage:__ H1(Html::__magicIF( TRUE ,'PHPHtml-Optimizer/Merge: Yes', FUNC_ASSOC)); - With multiple condition <br /> (*Not support GLOBAL VARIABLE ! ) / alternative ternary |
-
 
 <h6>PHPHtml-Optimizer Merge Version</h6>
 <p>PHPHtml-Merge version is more shorthand and simplier than PHPHTML-Optimizer in terms of functionality Both Optimizer is absolutely the same, The difference is the way you call the function and the way you use it.</p>
