@@ -322,20 +322,20 @@ Html::xH1($label=null)
 
 |Opt./ASSOCIATED | HTML/Descript. | ASSOCIATED     | Opt.ASSOCIATED/Inline noneClosing tag |  None ASSOCIATED _H1(begin)/xH1(end) |
 |:---            |:---            |:---            |:---                           |:---              |
-| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
-| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::_ELEMENT('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
-| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::_ELEMENT('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
-| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::_ELEMENT('my_param','param')`|`Html::_H4()`/`Html::xH4()`|
-| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::_ELEMENT('my_meta','meta')`|`Html::_H5()`/`Html::xH5()`|
-| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::_ELEMENT('my_link','link')`|`Html::_H6()`/`Html::xH6()`|
-| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |`Html::_ELEMENT('my_img','img')`|`Html::_DIV()`/`Html::xDIV()`|
-| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` | `Html::_ELEMENT('my_embed','embed')`|`Html::_P()`/`Html::xP()`|
-| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     | `Html::_ELEMENT('my_option','option')`|`Html::_BUTTON()`/`Html::xBUTTON()`|
-| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::_ELEMENT('my_col','col')`| `Html::_A()`/`Html::xA()`|
-| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::_ELEMENT('my_base','base')`| `Html::_IFRAME()`/`Html::xIFRAME()`|
-| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::_ELEMENT('my_aside','aside')`|`Html::_MAIN()`/`Html::xMAIN()`|
-| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::_ELEMENT('my_area','area')`| `Html::_NAV()`/`Html::xNAV()`|
-| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::_ELEMENT('my_DOCTYPE','DOCTYPE')`| `Html::_SELECT()`/`Html::xSELECT()`|
+| `Html::BREAK()`  | Break          | `Html::ELEMENT('H1')`    |`Html::ELEM('my_input','INPUT')`|`Html::_H1()`/`Html::xH1()`|
+| `Html::LINE()`   | Line           | `Html::ELEMENT('H2')`    |`Html::ELEM('my_track','track')`|`Html::_H2()`/`Html::xH2()`|
+| `Html::STRING()` | wout/Element   | `Html::ELEMENT('H3')`    |`Html::ELEM('my_circle','circle')`|`Html::_H3()`/`Html::xH3()`|
+| `Html::H1()`     | Heading 1      | `Html::ELEMENT('H4')`    |`Html::ELEM('my_param','param')`|`Html::_H4()`/`Html::xH4()`|
+| `Html::H2()`     | Heading 2      | `Html::ELEMENT('H5')`    |`Html::ELEM('my_meta','meta')`|`Html::_H5()`/`Html::xH5()`|
+| `Html::H3()`     | Heading 3      | `Html::ELEMENT('H6')`    |`Html::ELEM('my_link','link')`|`Html::_H6()`/`Html::xH6()`|
+| `Html::H4()`     | Heading 4      | `Html::ELEMENT('H1')`    |`Html::ELEM('my_img','img')`|`Html::_DIV()`/`Html::xDIV()`|
+| `Html::H5()`     | Heading 5      | `Html::ELEMENT('BUTTON')` | `Html::ELEM('my_embed','embed')`|`Html::_P()`/`Html::xP()`|
+| `Html::H6()`     | Heading 6      | `Html::ELEMENT('A')`     | `Html::ELEM('my_option','option')`|`Html::_BUTTON()`/`Html::xBUTTON()`|
+| `Html::DIV()`    | Element        | `Html::ELEMENT('IFRAME')`| `Html::ELEM('my_col','col')`| `Html::_A()`/`Html::xA()`|
+| `Html::P()`      | Paragraph      | `Html::ELEMENT('MAIN')`    | `Html::ELEM('my_base','base')`| `Html::_IFRAME()`/`Html::xIFRAME()`|
+| `Html::BUTTON()` | Element        | `Html::ELEMENT('NAV')`    | `Html::ELEM('my_aside','aside')`|`Html::_MAIN()`/`Html::xMAIN()`|
+| `Html::A()`      | Link Element   | `Html::ELEMENT('SELECT')`    | `Html::ELEM('my_area','area')`| `Html::_NAV()`/`Html::xNAV()`|
+| `Html::IFRAME()` | Element        | `Html::ELEMENT('FORM')` |  `Html::ELEM('my_DOCTYPE','DOCTYPE')`| `Html::_SELECT()`/`Html::xSELECT()`|
 | `Html::IFRAME()` | Element        | `Html::ELEMENT('PICTURE')`    |   | `Html::_FORM()`/`Html::xFORM()`|
 | `Html::MAIN()`   | Element        | `Html::ELEMENT('SECTION')`    |   | `Html::_PICTURE()`/`Html::xPICTURE()`|
 | `Html::NAV()`    | Element        | `Html::ELEMENT('TEXTAREA')`    |  | `Html::_SECTION()`/`Html::xSECTION()`|
