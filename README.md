@@ -214,7 +214,7 @@ function make_merge($cb, $do) {
   return $cb; 
 }
 
-Html::_PERFORM(
+Html::PERFORM(
 
   make_merge('Check_cb', $cb_merge = function () {
   
@@ -465,10 +465,9 @@ __*NOTE ! For Updates use new version for new project Migrate version not suppor
 
 For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For PHPFileEnhancers and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Enhancers"> Reference link here </a><br /> 
+For PHPForm Advance Form Builder and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
 For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
-For PHPForm and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br /> 
-For PHPLayout and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.5 </a><br /> 
-For PHPFrontScript and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v2 </a><br /> 
+For Html to PHPHtml-Optimizer Generator(Converter) <a href="#"> SOON <i> Convert HTML to PHPHtml-Optimizer Premium</i></a><br /> 
 For Developer <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer/issues"> Support link here </a><br /> 
 This Library is 100% secured and fully free ready to use, If you see vulnerability you can email me: @ nieldigitalsolution@gmail.com
 
