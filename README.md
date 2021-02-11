@@ -456,12 +456,12 @@ _xSTYLE($value=null,  $attr=null, $label=null, $assoc=null);
 
 // Merge version None or never be Associated or simply print function
 _SCRIPT($value=null,  $attr=null, $label=null);
- ... Content goes here ...
+ ...content goes here ...
 xSCRIPT($label = NULL);
 
 // Merge version None or never be Associated or simply print function
 _STYLE($value=null,  $attr=null, $label=null);
- ... Content goes here ...
+ ...content goes here ...
 xSTYLE($label = NULL);
 
 ```
