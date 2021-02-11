@@ -448,6 +448,22 @@ _MERGE($elem=null,  $attr=null, $id=null, $class=null);
 
 xMERGE($elem=null);
 
+// Merge version Optional Associated or simply print or return if set as associated function
+_xSCRIPT($value=null,  $attr=null, $label=null, $assoc=null);
+
+// Merge version Optional Associated or simply print or return if set as associated function
+_xSTYLE($value=null,  $attr=null, $label=null, $assoc=null);
+
+// Merge version None or never be Associated or simply print function
+_SCRIPT($value=null,  $attr=null, $label=null);
+ ... Content goes here ...
+xSCRIPT($label = NULL);
+
+// Merge version None or never be Associated or simply print function
+_STYLE($value=null,  $attr=null, $label=null);
+ ... Content goes here ...
+xSTYLE($label = NULL);
+
 ```
 
 <h5>Functions List HTML supported</h5>
