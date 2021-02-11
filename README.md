@@ -455,12 +455,12 @@ _xSCRIPT($value=null,  $attr=null, $label=null, $assoc=null);
 _xSTYLE($value=null,  $attr=null, $label=null, $assoc=null);
 
 // Merge version None or never be Associated or simply print function
-_SCRIPT($value=null,  $attr=null, $label=null);
+_SCRIPT($value=null,  $attr=null);
  ...content goes here ...
 xSCRIPT($label = NULL);
 
 // Merge version None or never be Associated or simply print function
-_STYLE($value=null,  $attr=null, $label=null);
+_STYLE($value=null,  $attr=null);
  ...content goes here ...
 xSTYLE($label = NULL);
 
