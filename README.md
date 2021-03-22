@@ -105,7 +105,7 @@ function SetExtension($src,$path,$argu) {
 
 }
 
-Html::_ELEMENT('Profile', 'link', SetExtension('src','/../profile', __PHP__) );
+Html::ELEM('Profile', 'link', setExtension('src','/../profile', __PHP__) );
 
 ```
 
